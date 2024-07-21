@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header style="background-image: url('header-bg.jpg')">
+      <h1>Health Tracker</h1>
+      <p>Discover the effects of staying fit</p>
+      <button class="action-button" onclick="goback()">Go Back</button>
+    </header>
+
+    <section class="testimonial">
+      <div class="testimonial-content">
+        <h2>Carl's Story</h2>
+        <p>
+          For Carl, 75, being able to do the things he enjoys motivates him to
+          exercise every day. “I lift weights twice a week and do stretching
+          exercises. I also like bowling and fishing. I exercise through going
+          on walks so I can stay fit. It also helps keep my muscles strong and I
+          have more energy to get going each day.”
+        </p>
+      </div>
+    </section>
+
+    <section class="tasks">
+      <h1>Start Tracking</h1>
+
+      <form action="/submit_task.php">
+        <input type="checkbox" id="task1" name="task1" value="drink water" />
+        <label for="task1"> Drink water</label><br />
+        <input type="checkbox" id="task2" name="task2" value="water garden" />
+        <label for="task2"> Water the Garden</label><br />
+        <input type="checkbox" id="task3" name="task3" value="go for a walk" />
+        <label for="task3"> Go for a walk</label><br />
+        <input type="checkbox" id="task4" name="task4" value="do yoga" />
+        <label for="task4"> Do Yoga</label><br />
+        <input type="checkbox" id="task5" name="task5" value="eat vegetables" />
+        <label for="task5"> Eat Vegetables</label><br />
+        <input type="checkbox" id="task6" name="task6" value="meditate" />
+        <label for="task6"> Meditate</label><br /><br />
+      </form>
+
+      <div class="completion">
+        <button onclick="completeTasks()">Completed!</button>
+        <p id="completionMessage"></p>
+      </div>
+    </section>
+
+    <script>
+      function completeTasks() {
+        var completionMessage = document.getElementById("completionMessage");
+        completionMessage.textContent = "Daily goals completed! Well done!";
+      }
+      function goback() {
+        window.location.href = "../result.html";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results</title>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          background-color: #e0f7fa;
+          color: #333;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      .navbar {
+          background-color: #6a1b9a;
+          color: white;
+          padding: 15px;
+          text-align: center;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .card {
+          background-color: #ffffff;
+          padding: 20px;
+          margin-bottom: 20px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+      }
+      .card h3 {
+          margin: 0 0 10px;
+          color: #4a148c;
+      }
+      .Next-button {
+          margin: 20px auto;
+          background-color: #4a148c;
+          color: #e0f7fa;
+          padding: 15px 25px;
+          font-family: Arial, Helvetica, sans-serif;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          display: block;
+      }
+      .slide-button {
+          background-color: #8e24aa;
+          color: #ffffff;
+          padding: 15px 25px;
+          font-family: Arial, Helvetica, sans-serif;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          display: block;
+          margin: 0 auto;
+      }
+      .result-section {
+          padding: 20px;
+          max-width: 800px;
+          margin: 0 auto;
+      }
+      canvas {
+          max-width: 100%;
+          margin-top: 20px;
+      }
+      .tracker-button{
+        background-color: #8e24aa;
+          color: #ffffff;
+          padding: 15px 20px;
+          font-family: Arial, Helvetica, sans-serif;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          display: block;
+          margin-top: 15px;
+          margin-left: 39%;
+      }
+  </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>Your Profile</h1>
+    </div>
+    <section class="result-section">
+      <div class="card">
+        <h3>Name</h3>
+        <p id="result-name"></p>
+      </div>
+      <div class="card">
+        <h3>Email</h3>
+        <p id="result-email"></p>
+      </div>
+      <div class="card">
+        <h3>Age</h3>
+        <p id="result-age"></p>
+      </div>
+      <div class="card">
+        <h3>Gender</h3>
+        <p id="result-gender"></p>
+      </div>
+      <div class="card">
+        <h3>Height</h3>
+        <p id="result-height"></p>
+      </div>
+      <div class="card">
+        <h3>Weight</h3>
+        <p id="result-weight"></p>
+      </div>
+      <div class="card">
+        <h3>Activity Level</h3>
+        <p id="result-activity-level"></p>
+      </div>
+      <div class="card">
+        <h3>Comments</h3>
+        <p id="result-comments"></p>
+      </div>
+      <div class="card">
+        <h3>BMI</h3>
+        <p id="result-bmi"></p>
+      </div>
+      <div class="card">
+        <h3>BMR</h3>
+        <p id="result-bmr"></p>
+      </div>
+      <div class="card">
+        <h3>Daily Caloric Needs</h3>
+        <p id="result-daily-caloric-needs"></p>
+      </div>
+    </section>
+    <div>
+      <button class="Next-button" onclick="goBack()">Go Back</button>
+    </div>
+    <button class="slide-button" onclick="goslides()">Learn More</button>
+    <button class="tracker-button" onclick="gotracker()">Start tracking</button>
+    </div>
+    <script src="result.js"></script>
+  </body>
+</html>
